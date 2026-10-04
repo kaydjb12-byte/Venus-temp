@@ -1,0 +1,21 @@
+name: Venus
+version: 1.0.0
+main: dev.venus.VenusPlugin
+api-version: '1.21'
+description: Venus item - +3 hearts passive and an unbreakable shield ability.
+commands:
+  venus:
+    description: Gives you the Venus item.
+    usage: /venus
+    permission: venus.give
+  venus1:
+    description: Makes your shield unbreakable for 5 seconds (25s cooldown).
+    usage: /venus1
+    permission: venus.use
+permissions:
+  venus.give:
+    description: Allows giving yourself the Venus item.
+    default: op
+  venus.use:
+    description: Allows using the Venus ability.
+    default: true
